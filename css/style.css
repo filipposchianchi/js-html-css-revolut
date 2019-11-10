@@ -1,0 +1,108 @@
+/*regole generali di pagina*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+/*regole nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.left-nav ul {
+    display: flex;
+}
+
+.left-nav ul li {
+    margin-right: 25px;
+    list-style-type: none;
+}
+
+.left-nav ul li a {
+    text-decoration: none;
+    line-height: 37px;
+    color: grey;
+    cursor: pointer;
+}
+
+.right-nav {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.right-nav ul {
+    display: flex;
+}
+
+.right-nav ul li {
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.right-nav ul li a {
+    text-decoration: none;
+    color: grey;
+    line-height: 37px;
+    cursor: pointer;
+}
+
+.right-nav ul li .get {
+    padding: 12px 25px;
+    background: #eb008d;
+    border-radius: 25px;
+    color: white;
+}
+
+/*dropdown menu accounts*/
+.dropdown_accounts, .dropdown_products, .dropdown_company, .dropdown_help, .dropdown_lang{
+    position: relative;
+}
+.dropdowncontent_accounts, .dropdowncontent_products, .dropdowncontent_company, .dropdowncontent_help, .dropdowncontent_lang {
+    position: absolute;
+    top: 40px;
+    left: -26px;
+    box-shadow: 0px 0px 20px lightgrey;
+    display: none;
+}
+.right-nav .dropdowncontent_accounts ul, .right-nav .dropdowncontent_products ul, .right-nav .dropdowncontent_company ul, .right-nav .dropdowncontent_help ul, .right-nav .dropdowncontent_lang ul {
+    display: block;
+    margin-top: 10px;
+}
+
+.right-nav .dropdowncontent_accounts ul li, .right-nav .dropdowncontent_products ul li, .right-nav .dropdowncontent_company ul li, .right-nav .dropdowncontent_help ul li, .right-nav .dropdowncontent_lang ul li {
+    padding-bottom: 15px;
+    margin-left: 0;
+}
+
+.right-nav .dropdowncontent_accounts ul li a, .right-nav .dropdowncontent_products ul li a, .right-nav .dropdowncontent_company ul li a, .right-nav .dropdowncontent_help ul li a, .right-nav .dropdowncontent_lang ul li a {
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+/*dropdown menu products*/
+.dropdowncontent_products {
+    width: 230px;
+}
+/*dropdown menu help*/
+.dropdowncontent_help {
+    width: 170px;
+}
+
+/*freccia su*/
+.fa-chevron-up {
+    display: none;;
+}
+
+
+ 
+
